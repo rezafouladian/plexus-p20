@@ -1,2 +1,5 @@
 U19: 0x800000-0x807FFF  
 U17: 0x808000-0x80FFFF
+
+U19 Reset Vector: 0x800708  
+U17 Reset Vector: 0x80854A
