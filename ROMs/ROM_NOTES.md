@@ -4,4 +4,4 @@ U17: 0x808000-0x80FFFF
 U19 Reset Vector: 0x800708  
 U17 Reset Vector: 0x80854A
 
-Main System RAM: 0xc00000?
+Main System RAM: 0xc00000? (might be the 16K SRAM)
