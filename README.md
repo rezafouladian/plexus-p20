@@ -2,7 +2,7 @@
 This is a fork of [https://github.com/misterblack1/plexus-p20](https://github.com/misterblack1/plexus-p20)
 
 
-Main Logic Board Components
+## Main Logic Board Components
 
 | Desig. | Part Number | Description |
 | ------ | ----------- | ----------- |
