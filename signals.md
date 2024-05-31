@@ -1,5 +1,5 @@
 Signal descriptions for use with [the schmatic](https://easyeda.com/editor#project_id=fc7ab9cf6f324c189f6ea68437a9e40a).
-
+                                                             |
 |Name       |Description                                                                 |
 |-----------|----------------------------------------------------------------------------|
 |20MHz      |20MHz source from oscillator                                                |
@@ -10,8 +10,9 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |ADDON-     |                                                                            |
 |AS.DMA-    |Address strobe (/AS) for the DMA processor                                  |
 |AS.JOB-    |Address strobe (/AS) for the job processor                                  |
-|AS26       |End of /AS counter - generates bus error                                    |
+|AS26       |End of /AS max counter - generates bus error                                |
 |ASCLK      |                                                                            |
+|BAS.DMA    |Buffered address strobe (/AS) for the DMA processor                         |
 |BERR.DMA-  |                                                                            |
 |BERR.JOB-  |                                                                            |
 |BERR.TIE-  |                                                                            |
@@ -41,9 +42,11 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |DTACK.JOB- |/DTACK for job processor                                                    |
 |DTACK.TIE- |                                                                            |
 |DTACK.UART-|                                                                            |
+|DTCKF-     |                                                                            |
 |EM12       |                                                                            |
 |EN.BLK-    |                                                                            |
 |EN.JOB-    |                                                                            |
+|EN.MBUS-   |                                                                            |
 |EP12       |                                                                            |
 |EP5        |                                                                            |
 |EPG-       |                                                                            |
@@ -64,13 +67,33 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |L.LED-     |                                                                            |
 |L.REG0-    |Load register 0                                                             |
 |L.REG1-    |Load register 1                                                             |
+|MBRESET    |                                                                            |
+|MRESET-    |                                                                            |
+|PFW        |                                                                            |
+|PFW-       |                                                                            |
 |R.REG0-    |Read register 0                                                             |
 |R.REG1-    |Read register 1                                                             |
 |READ.DMA   |R/W line from DMA processor                                                 |
 |READ.JOB   |R/W line from job processor                                                 |
 |REFON-     |Refresh on                                                                  |
 |REFRQ-     |Refresh request                                                             |
+|RES.DBA-   |Reset DMA processor bus error (DBE-)                                        |
+|RES.JBE-   |Reset job processor bus error (JBE-)                                        |
+|RESET-     |                                                                            |
+|RESMB-     |                                                                            |
 |ROM_15/17  |                                                                            |
 |ROM_17/15  |                                                                            |
-|S.OOPS     |DMA processor access invalid address (0x900000-0x9FFFFF or 0xB00000-0xBFFFFF|
+|S.BADA1-   |Bad selection - DMA processor attempting to access 0x900000-0x9FFFFF        |
+|S.BADA2-   |Bad selection - DMA processor attempting to access 0xB00000-0xBFFFFF        |
+|S.CAL-     |                                                                            |
+|S.OOPS     |DMA processor access invalid address (0x900000-0x9FFFFF or 0xB00000-0xBFFFFF)|
+|S.PROM-    |ROM selected                                                                |
+|S.REG-     |                                                                            |
+|S.SRAM-    |SRAM selected                                                               |
+|S.UART-    |UART selected                                                               |
+|S.VI-      |                                                                            |
 |UARTCLK    |9.8304MHz clock for UART?                                                   |
+|UPS        |                                                                            |
+|UPS-       |                                                                            |
+|VI.2-      |                                                                            |
+|VI.7-      |                                                                            |
