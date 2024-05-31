@@ -1,5 +1,5 @@
 Signal descriptions for use with [the schmatic](https://easyeda.com/editor#project_id=fc7ab9cf6f324c189f6ea68437a9e40a).
-                                                             |
+
 |Name       |Description                                                                 |
 |-----------|----------------------------------------------------------------------------|
 |20MHz      |20MHz source from oscillator                                                |
