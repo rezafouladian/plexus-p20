@@ -13,6 +13,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |AS26       |End of /AS max counter - generates bus error                                |
 |ASCLK      |                                                                            |
 |BAS.DMA    |Buffered address strobe (/AS) for the DMA processor                         |
+|BATT       |Clock battery source                                                        |
 |BERR.DMA-  |                                                                            |
 |BERR.JOB-  |                                                                            |
 |BERR.TIE-  |                                                                            |
@@ -22,6 +23,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |BKDN       |                                                                            |
 |BKREQ-     |                                                                            |
 |BOOT.DMA-  |                                                                            |
+|BOOT.JOB-  |                                                                            |
 |BR.JOB-    |                                                                            |
 |BREAD.DMA  |Buffered R/W line from DMA processor                                        |
 |BREAD.DMA- |Buffered R/W line from DMA processor (Inverted)                             |
@@ -33,9 +35,16 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |CLKB-      |                                                                            |
 |CLREF-     |Refresh related?                                                            |
 |COUNT.SC-  |                                                                            |
+|D.DIAG0-7  |Diagnostic output (8 bits)                                                  |
 |DATEN      |                                                                            |
 |DBE-       |DMA processor bus error related                                             |
+|DE0-       |Output selection for diagnostic port                                        |
+|DE1-       |Output selection for diagnostic port                                        |
+|DE2-       |Output selection for diagnostic port                                        |
+|DE3-       |Output selection for diagnostic port                                        |
+|DE6-       |Output selection for diagnostic port                                        |
 |DERR.JOB   |                                                                            |
+|DIAG.MB    |                                                                            |
 |DIAG.PEH   |                                                                            |
 |DMREQ-     |                                                                            |
 |DTACK.DMA- |/DTACK for DMA processor                                                    |
@@ -46,6 +55,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |EM12       |                                                                            |
 |EN.BLK-    |                                                                            |
 |EN.JOB-    |                                                                            |
+|EN.MAP     |                                                                            |
 |EN.MBUS-   |                                                                            |
 |EP12       |                                                                            |
 |EP5        |                                                                            |
@@ -59,6 +69,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |INT.DMA0-  |Interrupt bit 0 for DMA processor                                           |
 |INT.DMA1-  |Interrupt bit 1 for DMA processor                                           |
 |INT.DMA2-  |Interrupt bit 2 for DMA processor                                           |
+|INTR.UART- |                                                                            |
 |IORC*      |                                                                            |
 |IOWC*      |                                                                            |
 |JBE-       |Job processor bus error related                                             |
@@ -67,6 +78,13 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |L.LED-     |                                                                            |
 |L.REG0-    |Load register 0                                                             |
 |L.REG1-    |Load register 1                                                             |
+|L.SCA-     |                                                                            |
+|L.SCAH-    |                                                                            |
+|L.SCBC-    |                                                                            |
+|L.SCBCH-   |                                                                            |
+|L.SCCONT-  |                                                                            |
+|L.SIO-     |Load SIO register                                                           |
+|LDS.JOB-   |Lower data strobe (/LDS) for the job processor                              |
 |MAS.JOB-   |                                                                            |
 |MBRESET    |                                                                            |
 |MEM.DMA    |                                                                            |
@@ -80,12 +98,15 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |PEH        |                                                                            |
 |PEL        |                                                                            |
 |PELATCH-   |                                                                            |
-|PFW        |                                                                            |
-|PFW-       |                                                                            |
+|PFW        |Power fail warning?                                                         |
+|PFW-       |Power fail warning?                                                         |
+|R.BE-      |Read bus error register?                                                    |
 |R.MERR0-   |Read memory error register 0                                                |
 |R.MERR1-   |Read memory error register 1                                                |
 |R.REG0-    |Read register 0                                                             |
 |R.REG1-    |Read register 1                                                             |
+|R.SIO-     |Read SIO register                                                           |
+|R.USER-    |Read user register                                                          |
 |READ.DMA   |R/W line from DMA processor                                                 |
 |READ.JOB   |R/W line from job processor                                                 |
 |REFON      |                                                                            |
@@ -95,8 +116,8 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |RES.JBE-   |Reset job processor bus error (JBE-)                                        |
 |RESET-     |                                                                            |
 |RESMB-     |                                                                            |
-|ROM_15/17  |                                                                            |
-|ROM_17/15  |                                                                            |
+|ROM_15/17  |ROM selection                                                               |
+|ROM_17/15  |ROM selection                                                               |
 |S.BADA1-   |Bad selection - DMA processor attempting to access 0x900000-0x9FFFFF        |
 |S.BADA2-   |Bad selection - DMA processor attempting to access 0xB00000-0xBFFFFF        |
 |S.CAL-     |                                                                            |
@@ -111,7 +132,10 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |SB.CLK     |                                                                            |
 |SCSIBSY    |                                                                            |
 |SCSIDL-    |                                                                            |
+|TBUSY      |                                                                            |
+|TEMP       |                                                                            |
 |UARTCLK    |9.8304MHz clock for UART?                                                   |
+|UDS.JOB-   |Upper data strobe (/UDS) for the job processor                              |
 |UPS        |                                                                            |
 |UPS-       |                                                                            |
 |VI.2-      |                                                                            |
@@ -124,3 +148,4 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |WPGH-      |                                                                            |
 |WPGL-      |                                                                            |
 |WREF-      |                                                                            |
+|XACK       |                                                                            |
