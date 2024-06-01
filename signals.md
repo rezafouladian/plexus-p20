@@ -4,6 +4,9 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |-----------|----------------------------------------------------------------------------|
 |20MHz      |20MHz source from oscillator                                                |
 |32KHz      |32.768KHz clock signal for RTC                                              |
+|A.DMA1-23  |DMA processor address lines                                                 |
+|A.JOB1-23  |Job processor address lines                                                 |
+|A.MAP0-11  |Map RAM address lines                                                       |
 |ABE.DMA    |                                                                            |
 |ABE.JOB    |                                                                            |
 |ACKD       |                                                                            |
@@ -24,18 +27,20 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |BKREQ-     |                                                                            |
 |BOOT.DMA-  |                                                                            |
 |BOOT.JOB-  |                                                                            |
-|BR.JOB-    |                                                                            |
+|BR.JOB-    |Bus request signal to the job processor                                     |
 |BREAD.DMA  |Buffered R/W line from DMA processor                                        |
 |BREAD.DMA- |Buffered R/W line from DMA processor (Inverted)                             |
 |BREAD.JOB  |Buffered R/W line from job processor                                        |
 |BUFRDY     |                                                                            |
-|CAL.CE-    |                                                                            |
+|CAL.CE-    |Enable line for the RTC chip                                                |
 |CLK1       |                                                                            |
 |CLK2       |                                                                            |
 |CLKB-      |                                                                            |
 |CLREF-     |Refresh related?                                                            |
 |COUNT.SC-  |                                                                            |
 |D.DIAG0-7  |Diagnostic output (8 bits)                                                  |
+|D.DMA0-15  |DMA processor data lines                                                    |
+|D.JOB0-15  |Job processor data lines                                                    |
 |DATEN      |                                                                            |
 |DBE-       |DMA processor bus error related                                             |
 |DE0-       |Output selection for diagnostic port                                        |
@@ -46,6 +51,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |DERR.JOB   |                                                                            |
 |DIAG.MB    |                                                                            |
 |DIAG.PEH   |                                                                            |
+|DIS.MAP    |                                                                            |
 |DMREQ-     |                                                                            |
 |DTACK.DMA- |/DTACK for DMA processor                                                    |
 |DTACK.JOB- |/DTACK for job processor                                                    |
@@ -64,6 +70,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |FC2-       |                                                                            |
 |FC2.DMA    |                                                                            |
 |FC2.JOB    |                                                                            |
+|HME-       |                                                                            |
 |HOLDMBUS   |                                                                            |
 |I/O        |                                                                            |
 |INT.DMA0-  |Interrupt bit 0 for DMA processor                                           |
@@ -85,7 +92,11 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |L.SCCONT-  |                                                                            |
 |L.SIO-     |Load SIO register                                                           |
 |LDS.JOB-   |Lower data strobe (/LDS) for the job processor                              |
+|LME-       |                                                                            |
+|MA1-22     |RAM address lines                                                           |
 |MAS.JOB-   |                                                                            |
+|MBERR      |Multibus error                                                              |
+|MBERR-     |Multibus error                                                              |
 |MBRESET    |                                                                            |
 |MEM.DMA    |                                                                            |
 |MEM.JOB    |                                                                            |
@@ -122,7 +133,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |S.BADA2-   |Bad selection - DMA processor attempting to access 0xB00000-0xBFFFFF        |
 |S.CAL-     |                                                                            |
 |S.MAP-     |                                                                            |
-|S.MBE-     |                                                                            |
+|S.MBE-     |Multibus selected                                                           |
 |S.OOPS     |DMA processor access invalid address (0x900000-0x9FFFFF or 0xB00000-0xBFFFFF)|
 |S.PROM-    |ROM selected                                                                |
 |S.REG-     |                                                                            |
@@ -135,6 +146,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |TBUSY      |                                                                            |
 |TEMP       |                                                                            |
 |UARTCLK    |9.8304MHz clock for UART?                                                   |
+|UBE.DMA    |                                                                            |
 |UDS.JOB-   |Upper data strobe (/UDS) for the job processor                              |
 |UPS        |                                                                            |
 |UPS-       |                                                                            |
