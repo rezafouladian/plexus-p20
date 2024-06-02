@@ -25,14 +25,21 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |BGACK.JOB- |Bus grant acknowledge for job processor                                     |
 |BKDN       |                                                                            |
 |BKREQ-     |                                                                            |
-|BOOT.DMA-  |                                                                            |
-|BOOT.JOB-  |                                                                            |
+|BOOT.DMA-  |DMA processor finished booting?                                             |
+|BOOT.JOB-  |Job processor finished booting?                                             |
 |BR.JOB-    |Bus request signal to the job processor                                     |
 |BREAD.DMA  |Buffered R/W line from DMA processor                                        |
 |BREAD.DMA- |Buffered R/W line from DMA processor (Inverted)                             |
 |BREAD.JOB  |Buffered R/W line from job processor                                        |
 |BUFRDY     |                                                                            |
 |CAL.CE-    |Enable line for the RTC chip                                                |
+|CAL_AD0-7  |RTC combination address and data lines                                      |
+|CAL_AS*    |                                                                            |
+|CAL_DS     |                                                                            |
+|CAL_DS*    |                                                                            |
+|CAL_DS2*   |                                                                            |
+|CAL_RW     |RTC R/W signal                                                              |
+|CAL_SQW    |RTC square wave output                                                      |
 |CLK1       |                                                                            |
 |CLK2       |                                                                            |
 |CLKB-      |                                                                            |
@@ -103,6 +110,7 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |MPR-       |                                                                            |
 |MPW-       |                                                                            |
 |MPX-       |                                                                            |
+|MRESET     |                                                                            |
 |MRESET-    |                                                                            |
 |MWT        |                                                                            |
 |ON.DMA-    |                                                                            |
@@ -157,7 +165,10 @@ Signal descriptions for use with [the schmatic](https://easyeda.com/editor#proje
 |WEL        |                                                                            |
 |WIDH-      |                                                                            |
 |WIDL-      |                                                                            |
+|WOFF.JOB   |                                                                            |
 |WPGH-      |                                                                            |
 |WPGL-      |                                                                            |
 |WREF-      |                                                                            |
 |XACK       |                                                                            |
+|XAS-       |                                                                            |
+|XDS-       |                                                                            |
